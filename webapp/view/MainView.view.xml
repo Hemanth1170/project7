@@ -1,0 +1,18 @@
+<mvc:View controllerName="com.hemanth.apps.project7.controller.MainView"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m" >
+
+    <SplitApp id="app" initialDetail="detail" initialMaster="master">
+         <masterPages>
+            
+            <mvc:XMLView viewName="com.hemanth.apps.project7.view.master1" />
+                
+        </masterPages>
+        <detailPages>
+            
+            <mvc:XMLView viewName="com.hemanth.apps.project7.view.detail1" id="detailView" width="100%"/>
+                
+        </detailPages>
+        
+    </SplitApp>
+</mvc:View>

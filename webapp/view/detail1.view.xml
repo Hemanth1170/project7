@@ -1,0 +1,33 @@
+<mvc:View controllerName="com.hemanth.apps.project7.controller.detail1"
+    xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmln="sap.ui.webc.main"  xmlns:f="sap.ui.layout.form" id = "detailView">
+
+    <Page id="page" width="100%" title="details of the product" showNavButton="true" navButtonPress="onNavBack">
+        <content width="100%">
+            <VBox items = "{oProdDetailModel>/}" width="100%">
+                <items>
+                    <f:SimpleForm width="100%" editable="true" layout="ResponsiveGridLayout">
+                        <f:content>
+                        
+                            <Label text="Product ID" />
+                            <Text text="{oProdDetailModel>ProductID}" />
+                            <Label text="Product Name" />
+                            <Text text="{oProdDetailModel>Name}" />
+                            <Label text="Description" />
+                            <Text text="{oProdDetailModel>ProductID}" />
+                            <Label text="Supplier ID" />
+                            <Text text="{oProdDetailModel>SupplierID}" />
+                            <Label text="Supplier Name" />
+                            <Text text="{oProdDetailModel>SupplierName}" />
+                            <Label text="Width" />
+                            <Text text="{oProdDetailModel>Width}" />
+                            <Label text="Height" />
+                            <Text text="{oProdDetailModel>Height}" />
+                            <Label text="Price" />
+                            <Text text="{oProdDetailModel>Price}" />
+                        </f:content>
+                    </f:SimpleForm>
+                </items>
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>

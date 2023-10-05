@@ -1,0 +1,21 @@
+<mvc:View controllerName="com.hemanth.apps.project7.controller.MainView"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="Products">
+        <subHeader>
+			<OverflowToolbar>
+				<SearchField liveChange=".onSearch" width="100%" />
+			</OverflowToolbar>
+		</subHeader>
+        <List 
+            id="idList"
+            items = "{model1>/ProductSet}" >
+            <infoToolbar>
+				<OverflowToolbar visible="false" id="idInfoToolbar">
+					<Label id="idFilterLabel" />
+				</OverflowToolbar>
+			</infoToolbar>
+            <StandardListItem title="{model1>ProductID}" description = "{model1>Name}" type="Navigation" press = "listItemPressed"/>
+        </List>
+    </Page>
+</mvc:View>
