@@ -19,7 +19,7 @@
 
 ## project7
 
-Master Detail using nested views
+Master Detail using nested views, used concepts like routing and controlAggregation
 
 ### Starting the generated app
 
